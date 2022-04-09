@@ -1,0 +1,14 @@
+[programs.localnet]
+deposit_withdraw = "7Xev9w6cvHkDXmDFB71LBWXP99bNXqnccTKXz2QZEeRz"
+[programs.devnet]
+deposit_withdraw = "7Xev9w6cvHkDXmDFB71LBWXP99bNXqnccTKXz2QZEeRz"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/wstar/.config/solana/id.json"
+
+[scripts]
+test = "ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
