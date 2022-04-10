@@ -23,13 +23,9 @@ pub mod deposit_withdraw {
                                     amount);
 
         anchor_lang::solana_program::program::invoke(&ix, &[
-                                                                ctx.accounts.depositor.to_account_info(), 
-                                                                ctx.accounts.vault.to_account_info(), 
-                                                            ])?;
-
-        
-                
-
+            ctx.accounts.depositor.to_account_info(), 
+            ctx.accounts.vault.to_account_info(), 
+        ])?;
         Ok(())
     }
 
